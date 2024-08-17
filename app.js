@@ -1,9 +1,15 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');//edit
 require('dotenv').config();
 
 const app = express();
 const port = process.env.PORT || 3000;
+
+
+app.use(cors({
+    origin: 'https://appdownloader-three.vercel.app' // Replace with your frontend's URL
+})); //edit
 
 mongoose.connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
