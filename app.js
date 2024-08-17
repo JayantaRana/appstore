@@ -26,7 +26,7 @@ app.get('/api/download', async (req, res) => {
         await Download.findOneAndUpdate({}, { $inc: { count: 1 } }, { new: true, upsert: true });
         
         // Serve the APK file
-        const filePath = path.join(__dirname, 'public', 'myapp.apk');
+        const filePath = path.join(__dirname, 'public', '0ioAHdtUwgB0UINCAS6k.apk');
         res.download(filePath); // This triggers the file download
     } catch (error) {
         console.error('Error recording download:', error);
