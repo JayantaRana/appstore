@@ -9,19 +9,11 @@ const port = process.env.PORT || 3000;
 // Access-Control-Allow-Origin: '*';
 
 app.use(cors({
-<<<<<<< HEAD
-    origin: 'http://127.0.0.1:5500', // Replace this with the exact URL of your frontend
-    methods: 'GET,POST',
-    allowedHeaders: 'Content-Type'
-}));
-app.use(cors());
-=======
     origin: 'https://appdownloader-three.vercel.app', // Replace this with the exact URL of your frontend
     methods: 'GET,POST',
     allowedHeaders: 'Content-Type'
 }));
-// app.use(cors());
->>>>>>> 4d4f2fe622f439d9829650bf4ac00231e5e48e24
+
 
 
 
