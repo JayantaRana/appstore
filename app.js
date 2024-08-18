@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000;
 // Access-Control-Allow-Origin: '*';
 
 app.use(cors({
-    origin: 'https://appdownloader-three.vercel.app', // Replace this with the exact URL of your frontend
+    origin: 'https://getapps.vercel.app', // Replace this with the exact URL of your frontend
     methods: 'GET,POST',
     allowedHeaders: 'Content-Type'
 }));
